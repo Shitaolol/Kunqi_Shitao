@@ -16,10 +16,34 @@
 </head>
 
 <body>
-	 <audio autoplay="autoplay" height="100" width="100">
-         	<source src="renxi.mp3" type="audio/mp3" />
-         	<embed height="100" width="100" src="renxi.mp3" />
-         </audio>
+ 	<audio  id="bgmusic" autoplay="autoplay" height="100" width="100">
+         		<source src="renxi.mp3" type="audio/mp3" />
+         		<embed height="100" width="100" src="renxi.mp3" />
+         	</audio>
+
+	<!--音乐的开关-->
+	<script>
+		window.onload = function(){ 
+     		var audio = document.getElementById('bgmusic');
+       	  	//audio.pause();//打开页面时无音乐
+		}
+		function play() {
+    		var audio = document.getElementById('bgmusic');
+    			if (audio.paused) {
+       	 			audio.play();
+        				//document.getElementById('musicImg').src="images/play.png";
+  	 		}else{
+     	   			audio.pause();
+      	  		//	audio.currentTime = 0;//音乐从头播放
+       	 		//	document.getElementById('musicImg').src="images/stop.png";
+   	 		}
+	}
+	</script>
+
+	<img id=button src="images/button.png"  onClick="play()" width="50" height="50">
+	
+
+
 	<div id="mainDiv">
 		<div id="content">
 			<div id="loveHeart">
