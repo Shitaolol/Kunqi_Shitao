@@ -68,5 +68,19 @@
 			}, 500);
 		}
 	</script>
+	
+	</script>
+
+	<!-- jQuery snowfall插件 实现简单的 樱花飘落 -->
+	<script type="text/javascript" src="js/snowfall.jquery.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$(window).snowfall({image:"images/1.png", flakeCount:6, minSpeed:0.8,maxSpeed:4, minSize:8, maxSize:35,});
+            $(window).snowfall({image:"images/2.png", flakeCount:6, minSpeed:0.8,maxSpeed:4, minSize:8, maxSize:35,});
+            $(window).snowfall({image:"images/4.png", flakeCount:6, minSpeed:0.8,maxSpeed:4, minSize:8, maxSize:35,});
+            $(window).snowfall({image:"images/right.png", flakeCount:6, minSpeed:0.8,maxSpeed:4, minSize:8, maxSize:35,});
+            $(window).snowfall({image:"images/few.png", flakeCount:6, minSpeed:0.8,maxSpeed:4, minSize:8, maxSize:35,});
+		});
+	</script>
 </body>
 </html>
